@@ -45,8 +45,10 @@ plt.fill_betweenx(df2['Experiment'],(df2['Mass'].mean()-.012)*np.ones(len(df2)),
 plt.fill_betweenx(df2['Experiment'],(df2['Mass'].mean()-std)*np.ones(len(df2)),(df2['Mass'].mean()+std)*np.ones(len(df2)),color='yellow',label='This world uncertainity')
 plt.plot(80.377*np.ones(len(df2)),df2['Experiment'],linestyle='--',label='World Average',color='brown')
 plt.plot(df2['Mass'].mean()*np.ones(len(df2)),df2['Experiment'],linestyle='--',label='This World Average',color='blue')
-
+plt.xlabel('Mass of W boson')
+plt.ylabel('Experiment')
 plt.legend()
 fig.tight_layout()
 plt.savefig("wmass_plot.png")
+plt.savefig("wmass_plot.pdf")
 plt.show()
