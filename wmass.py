@@ -48,5 +48,5 @@ plt.plot(df2['Mass'].mean()*np.ones(len(df2)),df2['Experiment'],linestyle='--',l
 
 plt.legend()
 fig.tight_layout()
-plt.savefig("plot.pdf")
+plt.savefig("wmass_plot.png")
 plt.show()
